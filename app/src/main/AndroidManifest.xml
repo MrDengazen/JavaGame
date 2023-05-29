@@ -11,5 +11,4 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SamsungGameForJava"
         tools:targetApi="31" />
-
 </manifest>
