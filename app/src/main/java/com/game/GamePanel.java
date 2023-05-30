@@ -9,8 +9,8 @@ import android.view.SurfaceView;
 
 
 public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
-    public static final int WIDTH = 3120;
-    public static final int HEIGHT = 1440;
+    public static final int WIDTH = 2048;
+    public static final int HEIGHT = 1363;
     public static final int MOVESPEED = -5;
     private MainThread thread;
     private Background bg;
@@ -54,10 +54,8 @@ public class GamePanel extends SurfaceView implements SurfaceHolder.Callback {
 
         bg = new Background(BitmapFactory.decodeResource(getResources(), R.drawable.img));
         player = new Player(BitmapFactory.decodeResource(getResources(), R.drawable.knightdeath_strip), 29, 64, 15);
-        //we can safely start the game loop
         thread.setRunning(true);
         thread.start();
-
     }
 
     @Override

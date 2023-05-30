@@ -53,7 +53,7 @@ public class MainThread extends Thread {
             waitTime = targetTime - timeMillis;
 
             try {
-                this.sleep(waitTime);
+//                this.sleep(waitTime);
             } catch (Exception e) {
             }
 
