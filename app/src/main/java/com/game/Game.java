@@ -1,17 +1,14 @@
 package com.game;
 
-import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 
 public class Game extends AppCompatActivity {
@@ -23,9 +20,12 @@ public class Game extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(new GamePanel(this));
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        Button button = new Button(this);
-        button.setText("fcghgjkl");
-        addContentView(button, new FrameLayout.LayoutParams(100, 100));
+        ImageButton button_right = new ImageButton(this);
+        button_right.setImageResource(R.drawable.button_right);
+        button_right.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        addContentView(button_right, new FrameLayout.LayoutParams(100, 100));
+        //button_right.
+
     }
 
 }
